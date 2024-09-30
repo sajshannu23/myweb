@@ -42,7 +42,7 @@ pipeline{
             steps{
                  sh 'docker build -t saj12/dev .'
                  sh 'docker build -t tomcat:${BUILD_NUMBER} .'
-                 sh 'docker run -itd --name srini22 -p 2800:8080 tomcat:${BUILD_NUMBER}'
+                 sh 'docker run -itd --name srini23 -p 3000:8080 tomcat:${BUILD_NUMBER}'
              }
          }
         stage('Push Docker Image'){
